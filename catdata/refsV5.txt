@@ -1,0 +1,513 @@
+        Data on M31 globular clusters and globular cluster candidates
+                           Compiled by Silvia Galleti 
+ 
+                   This revision: August, 2012  V5
+
+What's new in the RBC 5:
+
+Read RevisionV5.tab
+
+********************************************************************************
+
+                        NOTICE!
+
+Please acknowledge the use of this catalogue. The proper reference is: 
+Galleti et al. A&A, 2004, 416, 917  RBC V1
+
+Other, more specific pubblications:
+Galleti et al. A&A, 2005, 436, 535  B514
+Galleti et al. A&A, 2006, 456, 985  RBC V2 Radial velocities
+Galleti et al. A&A, 2007, 471, 127  RBC V3 New candidates clusters
+Galleti et al. A&A, 2009, 508,1285  RBC V4 Spectroscopic metallicity estimates
+
+Please contact silvia.galleti@inaf.oabo.it with questions and/or comments. 
+*******************************************************************************
+
+Revisions 
+
+- RBC 2.0 [May 10, 2006] Wrong cross-identifications. 
+The identifications NB6 and NB80 we took from Battistini et al. (1993) were 
+found to be wrong. NB6 corresponds in fact to B118 and NB80 to B064D; we noted 
+also that NB6 and NB78 are B064D and B118, respectively.
+Moreover, in RBC (V.1) the object AU11 is actually B090D and AU12 is B145.
+The RBC V2.0 has been corrected accordingly.
+New data are included: Galleti et al. (2005) A&A, 436,535 and Galleti et al. 
+(2006) A&A, 459, 985
+
+- RBC 3.0 [May 18, 2007] Wrong cross-identifications. 
+B458 and B031D are the same object.
+The RBC V3.0 has been corrected accordingly.
+New data are included: Martin et al.(2006) MNRAS, 371, 1983; Mackey et al. 
+(2007) ApJ, 655, 85; Galleti et al. (2007) A&A 471, 127
+
+- RBC 3.2 [July 16, 2007] Wrong cross-identifications. 
+VDB0 and B195D are the same object.
+The RBC V3.2 has been corrected accordingly.
+New data are included: Kim et al. (2007) AJ, 134, 706
+
+- RBC 3.3 [November 26, 2007] Wrong classifications.
+B518 supplementary investigations shows that is star superimposed to galaxy,
+and B519 is a galaxy (its radial velocity is from another object). 
+NB67 is a star from HST images.
+
+- RBC 3.4 [January 29, 2008] New data are included: Huxor et al. (2008)
+
+- RBC 3.5 [March 21, 2008] New data are included:  Extended clusters reported in
+Mackey et al. (2006) and Huxor et al. (2008)
+
+- RBC 4.0 [December, 2009] Revised coordinates, new data, new objects, new 
+classifications are included. 
+Beccari et al. (2007), Fan et al. (2008), Alves-Brito et al. (2009), 
+Caldwell et al. (2009), Galleti et al. (2009), Perina et al. (2009) and 
+Perina et al. (2010). 
+WARNING! Read the note concerning the Caldwell M31 GCs catalogue.
+RBC_Caldwell.txt
+
+********************************************************************************
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This data compilation contains ten files:
+
+refs.tab     - this file
+RBC          - Name and positions for M31 globular clusters, cluster candidates
+               and all objects that are "not-M31-GC"
+RBC_Phot     - photometric data for M31 globular clusters, candidates and
+               all objects that are "not-M31-GC" 
+RBC_RV       - radial velocity for M31 globular clusters, candidates and
+               all objects that are "not-M31-GC" 
+RBC_SP       - structural parameters for M31 globular clusters, candidates and
+               all objects that are "not-M31-GC" 
+RBC_sdss     - sdss photometric data for M31 globular clusters, candidates and
+               all objects that are "not-M31-GC" 
+New_clusters - New clusters from HST 
+M31GC_Fe     - Spectroscopic metallicities for M31 globular clusters 
+M31GC_index  - Lick metallicity indices for M31 globular clusters 
+Revisions    - list of revisions and changes to the files
+
+m31rbcV5.dat   Master catalog: combination of information from 
+               Tables RBC, RBC_Phot, RBC_RV, M31GC_Fe, and M31GC_index
+
+MWGC_ind     - Lick indices for MW globular clusters 
+
+RBC_Caldwell - Notes concerning the Caldwell M31 GCs catalogue
+C09_P10_RBC  - Notes concerning identifications
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Not available data are marked as 9999
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+INCLUDED FILES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Tables including all kind of objects (GCs, GC candidates, galaxies, etc.)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+RBC: name and cluster positions
+--------------------------------------------------------------------------------
+Column  1      Name: Designation
+Column  2      Bol   Identification from B87
+Column  3      G     Identification from SG77
+Column  4      V     Identification from V62
+Column  5      NB    Identification from B93 
+Column  6      AU    Identification from AU92
+Column  7      DAO   Identification from CR84
+Column  8      BA    Identification from BA64
+Column  9      SH    Identification from SL85
+Column  10     M     Identification from M98
+Column  11     BH    Identification from B01
+Column  12     SK    Identification from SCK07 (&)
+Column  13     f     Global classification flag (1)
+Column  14     p     "possible" classification for candidate GCs (2)
+Column  15     y     Age classification from FFP05 (3)
+Column  17     a     Age classification from C09 (4+)
+Column  16     pe    Age classification from P10 (5)
+Column  17     C     Classification from the original paper 
+Column  18     S     Spectroscopic confirmation (5)
+Column  19     V     Confirmation via high resolution imaging (6)
+Column  20     Com   Comment and reference (7)
+Columns 21-22        RA, Dec in epoch 2000 coordinates
+Column  23           Source of the coordinates (8)
+--------------------------------------------------------------------------------
+Note (1): [1] - confirmed GC; [2] - GC candidates; [3] - Controversial object; 
+          [4] - confirmed galaxy; [5] - confirmed H II Region; [6] - confirmed 
+          star; [7] - asterism; [8] - Extended cluster. 
+
+Note (2): Not firmly established classificatons from the literature ("The
+          object is a possible star") 
+          [0] - other classification; [1] - possible globular cluster; 
+          [2] - no classification; [4] - possible galaxy; [5] - possible region HII; 
+          [6] - possible star/s). 
+
+Note (3): Fusi Pecci et al. 2005 (FFP05) Tab. 1 [1] sample A (B-V)<0.55; 
+          [2] sample B (Hbeta>3.5); [3] sample A +B; [4] young from other source 
+          Tab. 2 (FFP05); [5] candidates Tab. 3 (FFP05); [6] candidates from 
+          SCK07 with (B-V)<0.55.  
+
+Note (4): age classification from Caldwell et al. (2009) C09: 
+          [0] - not considered; [1] - "young" cluster with age < 1 Gyr; 
+          [2] - "interm" cluster with 1 Gyr < age < 2 Gyr; 
+          [3] - "old" cluster with age > 2 Gyr; [8] - not available or no data;
+          [9] - other classification.  
+
+Note (5): age classification from Peacock et al. (2010) P10: 
+          [0] - not considered; [1] - "old" cluster; [2] - candidate cluster; 
+          [3] - "young" cluster ; [4] - background galaxy ; [5] - HII region
+          [6] - star.  
+
+Note (6): [C] - Cluster; [G] - Galaxy; [S] - Star; [H] - H II Region; 
+          [E] - Extended cluster.
+
+Note (7): References, comments and/or HST archive frame 
+          file name.     
+
+Note (8): 2MASS; SDSS; GSC-II; LGS - coordinates from Massey et al. 2006, 
+          AJ, 131, 2478; HST; all the other coordinates are not revised 
+          (RBC V.4)
+
+Note (&): SKnnnA from their Table 5 new globular clusters; 
+          SKnnnB from their Table 6 new probable globular glusters (candidates);
+          SKnnnC from their Table 7 new possible globular clusters (candidates).
+
+Note (+): Read the note concerning the Caldwell M31 GCs catalogue
+
+
+--------------------------------------------------------------------------------
+
+Reference RBC:
+
+V62    1962BAICz..13..180V Vetesnik
+BA64   1964ApJ...139.1027B Baade & Arp
+SG77   1977AJ.....82..947S Sargent et al.
+KS77   1977SvAL....3..207K Karimova & Sharov 
+B80    1980A&AS...42..357B Battistini et al. 
+HD81   1981aag..book.....H Hodge
+SL83   1983Ap&SS..90..371S Sharov & Lyutyj
+CR85   1985ApJ...288..494C Crampton et al.
+SL85   1985AstL...11..248S Sharov & Lyutyj 
+B87    1987A&AS...67..447B Battistini et al. 
+Bo88   1988A&A...205....6B Bonoli et al. 
+F90    1990A&A...236...99F Federici et al. 
+C91    1991AJ....101..483C Cohen & Freeman 
+H91    1991ApJ...370..495H Huchra et al. 
+R91    1991AJ....101..865R Racine 
+AU92   1992A&A...256...95A Auriere et al. 
+R92    1992AJ....104.1068R Racine & Harris 
+RHH92  1992AJ....103..824R Reed et al. 
+B93    1993A&A...272...77B Battistini et al. 
+H93    1993gcgc.work..420H Huchra et al. 
+F93    1993A&A...274...87F Federici et al.
+FP94   1994A&A...284..349F Fusi pecci et al. 
+RHH94  1994AJ....107..555R Reed et al. 
+A96    1996AJ....111.1110A Ajhar et al. 
+FP96   1996AJ....112.1461F Fusi pecci et al.
+RC96   1996AJ....111..768R Rich et al .
+DG97   1997A&A...321..379D Dubath & Grillmair 
+HL97   1997AJ....114.1488H Holland et al. 
+M98    1998AcA....48..455M Mochejska et al. 
+J98    1998A&A...335..867J Jablonka et al. 
+B00    2000AJ....119..727B Barmby et al.
+J00    2000A&A...359..131J Jablonka et al. 
+B01    2001AJ....122.2458B Barmby & Huchra    
+WH01   2001ApJ...548..190W Williams & Hodge
+M01    2001AJ....122..830M Meylan et al.
+ST01   2001AJ....121..259S Stephens et al. 
+P02    2002AJ....123.2490P Perrett et al.
+BE04   2004AJ....128.1623B Beasley et al.
+BR04   2004ApJ...613L.125B Brown et al.
+CO05   2005ApJ...634L..45C Cohen et al.
+FFP05  2005AJ....130..554F Fusi Pecci et al. 
+RC05   2005AJ....129.2670R Rich et al. 
+G05    2005A&A...436..535G Galleti et al.
+G06    2006A&A...459..985G Galleti et al.
+MA06   2006ApJ...636L..93M Ma et al.
+M06    2006MNRAS.371.1983M Martin et al.
+MC06   2006ApJ...653L.105M Mackey et al.
+G07    2007A&A...471..127G Galleti et al.
+MC07   2007ApJ...655L..85M Mackey et al.
+SCK07  2007AJ....134..706K Kim et al.
+Be07   2007A&A...476..193B Beccari et al.
+HA08   2008MNRAS.385.1989H Huxor et al.
+A09    2009MNRAS.395L..34A Alves-Brito et al.
+C09    2009AJ....137...94C Caldwell et al.
+Pe09   2009A&A...507.1375P Perina et al. 
+Pe10   2010A&A...511A..23P Perina et al. 
+P10    2010MNRAS.402..803P Peacock et al. 
+Pe11   2011A&A...531A.155P Perina et al. 
+C11    2011AJ....141...61C Caldwell et al.
+CW11   http://www.cfa.harvard.edu/oir/eg/m31clusters/M31_Hectospec.html 
+       M31_Hectospec_catalog.tab
+G12    news RBC
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+RBC_Phot: photometry
+--------------------------------------------------------------------------------
+Column  1      Name: Designation
+Column  2      f          Flag of the real nature of the entry 
+Column  3      p          "possible" classification for candidate GCs 
+Column  4      y          Age classification from FFP05 
+Column  5      a          Age classification from C09 
+Column  6      pe         Age classification from P10 
+Column  7      Umag       U magnitudes 
+Column  8      f_Umag     Flag of B magnitudes (1)
+Column  9      Bmag       B magnitudes 
+Column  10     f_Bmag     Flag of B magnitudes (1)
+Column  11     Vmag       V magnitudes 
+Column  12     f_Vmag     Flag of V magnitudes (1)
+Column  13     Rmag       R magnitudes 
+Column  14     f_Rmag     Flag of R magnitudes (1)
+Column  15     Imag       I magnitudes 
+Column  16     f_Imag     Flag of I magnitudes (1)
+Column  17     Jmag       J magnitudes 
+Column  18     f_Jmag     Flag of J magnitudes (2)
+Column  19     Hmag       H magnitudes 
+Column  20     f_Hmag     Flag of H magnitudes (2)
+Column  21     Kmag       K magnitudes 
+Column  22     f_Kmag     Flag of K magnitudes (2)
+Column  23     NUVmag     NUV magnitudes 
+Column  24     eNUVmag    error NUV magnitudes 
+Column  25     f_NUVmag   Flag of NUV magnitudes (3)
+Column  26     FUVmag     FUV magnitudes 
+Column  27     eFUVmag    error FUV magnitudes 
+Column  28     f_FUVmag   Flag of FUV magnitudes (3)
+--------------------------------------------------------------------------------
+Note (1):  0 = B00-B01; 1 = PG B87; 2 = PG B82; 3 = eye B80; 4 = F300W ccd ; 
+           5 = SK07 ; 6 = F10; 7 = P10 ; 8 = Be07(u);  11-18 = PE SL75-96 ; 
+           19 = RHM92-94: 20 = C93 ; 21 = B93 ; 22 = AU92; 23 = R92; 24 = M98; 
+           30 = C09; 31 = new data G12; 9 = null													       
+                                                                                                                         
+Note (2): 0 = 2mass ; 1 = B00 ; 2 = CM94 ; 3 = Bo92 ; 4 = B01a ; 
+          5 = new data as in G04; 9 = null	
+ 													    
+Note (3): 0 = R07 ; 1 = K12 ; 9 = null 
+      
+
+--------------------------------------------------------------------------------
+         
+Reference for RBC_Phot:
+
+SL75   1975SvAL....1...69S Sharov et al. 
+SL76   1976SvAL....2..128S Sharov et al.
+SL78A  1978SvA....22..548S Sharov et al.
+SL78B  1978SvAL....4..163S Sharov et al.
+SL79   1979SvAL....5..308S Sharov et al.
+SL80   1980SvAL....6..299S Sharov et al.
+SL81   1981SvAL....7..367S Sharov et al.
+B82    1982A&AS...47..451B Buonanno et al.     
+SL82   1982SvAL....8..243S Sharov et al.
+SL83   1983Ap&SS..90..371S Sharov & Lyutyj
+SL84   1984SvAL...10..243S Sharov et al.
+SL85   1985AstL...11..248S Sharov & Lyutyj 
+SL87   1987SvAL...13..270S Sharov et al.
+AU92   1992A&A...256...95A Auriere et al. 
+Bo92   1992A&AS...96..163B Bonoli et al. 
+RHH92  1992AJ....103..824R Reed et al. 
+SL92   1992SvAL...18...41S Sharov et al. 
+R92    1992AJ....104.1068R Racine & Harris 
+B93    1993A&A...272...77B Battistini et al. 
+C93    1994AJ....108..128C Cohen et al. 
+CM94   1994AJ....108..128C Cohen & Matthews
+RHH94  1994AJ....107..555R Reed et al. 
+SL95   1995AstL...21..240S Sharov et al. 
+SL96   1996AstL...22..409S Sharov et al. 
+M98    1998AcA....48..455M Mochejska et al. 
+B00    2000AJ....119..727B Barmby et al.
+BW00   http://cfa-www.harvard.edu/~pbarmby/m31gc.dat 
+       Barmby Table web
+B01    2001AJ....122.2458B Barmby & Huchra    
+B01a   2001AJ....121.1496B Barmby et al.
+G05    2005A&A...436..535G Galleti et al. 
+FFP05  2005AJ....130..554F Fusi Pecci et al. 
+FFP    private comunication
+SCK07  2007AJ....134..706K Kim et al.
+HA08   2008MNRAS.385.1989H Huxor et al.
+Be07   2007A&A...476..193B Beccari et al.
+C09    2009AJ....137...94C Caldwell et al.
+F10    2010ApJ...725..200F Fan et al.
+P10    2010MNRAS.402..803P Peacock et al. 
+R07    2007ApJS..173..643R Rey et al.
+K12    2012ApJS..199...37K Kang et al.
+G12    new data            Galleti
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+RBC_RV: radial velocity
+--------------------------------------------------------------------------------
+Column  1      Name:      Designation
+Column  2      f          Flag of the real nature of the entry 
+Column  3      p          "possible" classification for candidate GCs 
+Column  4      y          Age classification from FFP05 
+Column  5      a          Age classification from C09 
+Column  6      pe         Age classification from P10 
+Column  7      Vmag       V magnitudes 
+Column  8      Vr         heliocentric radial velocity (1)
+Column  9      errV       error in velocity
+Column  10     Ref.       radial relocity source (2)
+--------------------------------------------------------------------------------
+Note (1): Not available data are marked as 99999
+      
+Note (2):  0 = HR; 1 = H91; 2 = P02; 3 = F93; 4 = J98; 5 = B00; 6 = G06 ; 
+           7 = G07;  8 = BW00; 10 = C09; 11 = SK07 ; 12 = V69; 13 = A09; 
+           14 = G12 new data as G06; 15 = C11;  20 = average (see G06) ; 
+           99 = null
+ 
+          
+--------------------------------------------------------------------------------
+ 
+Reference for RBC_RV:
+
+HR     DG97, P89
+DG97   1997A&A...321..379D Dubath & Grillmair 
+P89    1989dynamicofdenseP Peterson et al.
+H91    1991ApJ...370..495H Huchra et al. 
+H93    1993gcgc.work..420H Huchra et al. 
+F93    1993A&A...274...87F Federici et al.
+J98    1998A&A...335..867J Jablonka et al. 
+B00    2000AJ....119..727B Barmby et al.
+BW00   http://cfa-www.harvard.edu/~pbarmby/m31gc.dat 
+       Barmby Table web
+P02    2002AJ....123.2490P Perrett et al.
+G06    2006A&A...459..985G Galleti et al.
+G07    2007A&A...471..127G Galleti et al.
+SCK07  2007AJ....134..706K Kim et al.
+C09    2009AJ....137...94C Caldwell et al.
+A09    2009MNRAS.395L..34A Alves-Brito et al.
+G09    2009A&A...508.1285G Galleti et al.
+C11    2011AJ....141...61C Caldwell et al.
+G12    new data            Galleti 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Tables including only confirmed GCs
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+M31CG_Fe: metallicity
+--------------------------------------------------------------------------------
+Column  1      Name:      Designation
+Column  2      f          Global classification flag (1)
+Column  3      y          Age classification from FFP05 (2)
+Column  4      a          Age classification from C09 (3)
+Column  5      [Fe/H]     Spectroscopic metallicity estimates 
+Column  6      e_[Fe/H]   error in metallicity
+--------------------------------------------------------------------------------
+Note (1): [1] - confirmed GC; [3] - Controversial object.
+          
+Note (2): Fusi Pecci et al. 2005 (FFP05) Tab. 1 [1] sample A (B-V)<0.55; 
+          [2] sample B (Hbeta>3.5); [3] sample A +B; [4] young from other source 
+          Tab. 2 (FFP05); [5] candidates Tab. 3 (FFP05).
+
+Note (3): age classification from Caldwell et al. (2009) C09: 
+          [0] - not considered; [1] - "young" cluster with age < 1 Gyr; 
+          [2] - "interm" cluster with 1 Gyr < age < 2 Gyr; 
+          [3] - "old" cluster with age > 2 Gyr; [8] - not available or no data;
+          [9] - other classification.  
+
+          
+--------------------------------------------------------------------------------
+ 
+Reference for M31GC_Fe:
+
+G09    2009A&A...508.1285G Galleti et al. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+M31CG_index: Lick metallicity indices of M31 globular clusters
+--------------------------------------------------------------------------------
+Column  1      Name:      Designation
+Column  2      f          Global classification flag (1)
+Column  3      Mg2        Mg2 index
+Column  4      e_Mg2      Mg2 index error
+Column  5      Mgb        Mgb index
+Column  6      e_Mgb      Mgb index error
+Column  7      Fe5270     Fe5270 index
+Column  8      e_Fe5270   Fe5270 index error
+Column  9      Fe5335     Fe5335 index
+Column 10      e_Fe5335   Fe5335 index error
+Column 11      Fe5406     Fe5406 index
+Column 12      e_Fe5406   Fe5406 index error
+Column 13      Hbeta      Hbeta index
+Column 14      e_Hbeta    Hbeta index error
+Column 15      y          Age classification from FFP05 (2)
+Column 16      a          Age classification from C09 (3)
+Column 17      Set        Source of the Lick metallicity indices (4)
+
+--------------------------------------------------------------------------------
+Note (1): [1] - confirmed GC; [2] - GC candidates; [3] - Controversial object; 
+          [4] - confirmed galaxy; [5] - confirmed H II Region; [6] - confirmed 
+          star; [7] - asterism; [8] - Extended cluster. 
+
+Note (2): Fusi Pecci et al. 2005 (FFP05) Tab. 1 [1] sample A (B-V)<0.55; 
+          [2] sample B (Hbeta>3.5); [3] sample A +B; [4] young from other source 
+          Tab. 2 (FFP05); [5] candidates Tab. 3 (FFP05).
+
+Note (3): age classification from Caldwell et al. (2009) C09: 
+          [0] - not considered; [1] - "young" cluster with age < 1 Gyr; 
+          [2] - "interm" cluster with 1 Gyr < age < 2 Gyr; 
+          [3] - "old" cluster with age > 2 Gyr; [8] - not available or no data;
+          [9] - other classification.  
+
+Note (4): Source of the Lick metallicity indices:
+          [0] - T98; [1] - Pz05; [2] - B04; [3] - G09 WHT data; [4] - P02; 
+          [5] - H91; [6] - G09 TNG data; [7] - G09 LOIANO data
+          
+--------------------------------------------------------------------------------
+ 
+Reference for M31GC_index:
+
+G09    2009A&A...508.1285G Galleti et al. 
+H91    1991ApJ...370..495H Huchra et al. 
+P02    2002AJ....123.2490P Perrett et al.
+T98    1998ApJS..116....1T Trager et al.
+Pz05   2005A&A...434..909P Puzia et al.
+B04    2004AJ....128.1623B Beasley et al.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+MWCG_ind: Lick metallicity indices of MW globular clustrers
+--------------------------------------------------------------------------------
+Column  1      Name:      Designation
+Column  2      Mg2        Mg2 index
+Column  3      e_Mg2      Mg2 index error
+Column  4      Mgb        Mgb index
+Column  5      e_Mgb      Mgb index error
+Column  6      Fe5270     Fe5270 index
+Column  7      e_Fe5270   Fe5270 index error
+Column  8      Fe5335     Fe5335 index
+Column  9      e_Fe5335   Fe5335 index error
+Column 17      Set        Source of the Lick metallicity indices (1)
+
+--------------------------------------------------------------------------------
+Note (1): Source of the Lick metallicity indices:
+          [1] - T98; [2] - G09 index values have been measured from spectra 
+          available by S05; [3] - B04
+         
+--------------------------------------------------------------------------------
+ 
+Reference for M31GC_index:
+
+G09    2009A&A...508.1285G Galleti et al. 
+T98    1998ApJS..116....1T Trager et al.
+S05    2005ApJS..160..163S Schiavon et al.
+B04    2004AJ....128.1623B Beasley et al.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+RBC_SP
+
+See reference:
+    Barmby  2002 2002AJ....123.1937B   B02
+    Barmby  2007 2007AJ....133.2764B   B07
+    Peacock 2009 2009MNRAS.392L..55P   P09
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+RBC_SDSS
+
+See reference:
+    Peacock 2010 2010MNRAS.402..803P   P10
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+

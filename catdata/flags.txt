@@ -1,0 +1,11 @@
+A guide to the morphology flags
+
+-9: saturated
+
+-2: within 2 sigma of the stellar locus (probably a star)
+-1: within 1 sigma of the stellar locus (very probably a star)
+
+0: noise feature (more concentrated than a star)
+
+1: within 1 sigma of the galaxy (extended object) locus (very probably a galaxy)
+2: within 2 sigma of the galaxy (extended object) locus (probably a galaxy)
