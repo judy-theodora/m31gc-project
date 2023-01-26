@@ -1,0 +1,7 @@
+global color=red dashlist=8 3 width=1 font="helvetica 14 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1 
+fk5 
+circle(19.835041666666665,46.0532,21.6") # text={PAndAS-55, 4 pts} 
+point(19.835484, 46.058624) # color=green 
+point(19.839466, 46.056072) # color=green 
+point(19.829405, 46.056927) # color=green 
+point(19.831587, 46.058563) # color=green 

@@ -1,0 +1,30 @@
+global color=red dashlist=8 3 width=1 font="helvetica 14 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1 
+fk5 
+circle(5.3965,48.2256111,21.6") # text={2M032, 27 pts} 
+point(5.3941083, 48.22238) # color=green 
+point(5.3913918, 48.226128) # color=green 
+point(5.3964376, 48.2256) # color=green 
+point(5.4019623, 48.226315) # color=green 
+point(5.395679, 48.22036) # color=green 
+point(5.3968167, 48.22322) # color=green 
+point(5.39785, 48.230362) # color=green 
+point(5.3945956, 48.22412) # color=green 
+point(5.4013667, 48.22358) # color=green 
+point(5.3941627, 48.224937) # color=green 
+point(5.3981543, 48.22231) # color=green 
+point(5.4011664, 48.22224) # color=green 
+point(5.40405, 48.22785) # color=green 
+point(5.393504, 48.220703) # color=green 
+point(5.391879, 48.223743) # color=green 
+point(5.401371, 48.22888) # color=green 
+point(5.402154, 48.22223) # color=green 
+point(5.400925, 48.224854) # color=green 
+point(5.3897166, 48.225384) # color=green 
+point(5.399929, 48.22415) # color=green 
+point(5.394754, 48.220833) # color=green 
+point(5.3928165, 48.22716) # color=green 
+point(5.4052167, 48.224575) # color=green 
+point(5.3974586, 48.22169) # color=green 
+point(5.388575, 48.228012) # color=green 
+point(5.4041834, 48.22607) # color=green 
+point(5.399621, 48.224915) # color=green 

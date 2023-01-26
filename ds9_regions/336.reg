@@ -1,0 +1,31 @@
+global color=red dashlist=8 3 width=1 font="helvetica 14 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1 
+fk5 
+circle(15.96447,45.29663,21.6") # text={LAMOST-C11, 28 pts} 
+point(15.964496, 45.296658) # color=green 
+point(15.960733, 45.299927) # color=green 
+point(15.9597, 45.292435) # color=green 
+point(15.971413, 45.29953) # color=green 
+point(15.967463, 45.295864) # color=green 
+point(15.959434, 45.2975) # color=green 
+point(15.95925, 45.299862) # color=green 
+point(15.969571, 45.29703) # color=green 
+point(15.967658, 45.293728) # color=green 
+point(15.958692, 45.29681) # color=green 
+point(15.962104, 45.294815) # color=green 
+point(15.962696, 45.29788) # color=green 
+point(15.963533, 45.297646) # color=green 
+point(15.972155, 45.296745) # color=green 
+point(15.968071, 45.298985) # color=green 
+point(15.972737, 45.29554) # color=green 
+point(15.9645, 45.294346) # color=green 
+point(15.968305, 45.29455) # color=green 
+point(15.967192, 45.29213) # color=green 
+point(15.967862, 45.296906) # color=green 
+point(15.972438, 45.297462) # color=green 
+point(15.957025, 45.297825) # color=green 
+point(15.964596, 45.30005) # color=green 
+point(15.962833, 45.293884) # color=green 
+point(15.964529, 45.293636) # color=green 
+point(15.967046, 45.292564) # color=green 
+point(15.967387, 45.291237) # color=green 
+point(15.961004, 45.29495) # color=green 
