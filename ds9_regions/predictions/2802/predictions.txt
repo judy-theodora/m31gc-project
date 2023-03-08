@@ -1,0 +1,7 @@
+28/02/23 gc candidates
+
+n_trees = 30
+max_depth_ = 9
+max_leaf_nodes_ = 12
+min_samples_leaf_ = 20
+features = ['i','g','i-g']

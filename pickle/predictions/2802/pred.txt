@@ -1,0 +1,7 @@
+2802
+Predictions made with parameters:
+trees = 30
+max_depth = 9
+max_leaf_nodes = 12
+min_samples_leaf = 20
+features = i,g,i-g

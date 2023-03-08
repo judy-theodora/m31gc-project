@@ -1,3 +1,3 @@
 #####
 IPAC tables downloading with format {field}.tbl
-Using a box of size 4000arcsec, centered at the calculated field centre
+Using a box of size 3800arcsecc, centered at the calculated field centre
