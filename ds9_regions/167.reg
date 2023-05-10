@@ -1,22 +1,5 @@
 global color=red dashlist=8 3 width=1 font="helvetica 14 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1 
 fk5 
-circle(8.5717625,37.5120611,21.6") # text={H9, 0 pts, class 1.0} 
-circle(9.1714167,37.5815,21.6") # text={2M020, 20 pts, class 4.0} 
-point(9.175108, 37.57662) # color=green 
-point(9.17145, 37.581627) # color=green 
-point(9.175817, 37.580856) # color=green 
-point(9.171654, 37.57986) # color=green 
-point(9.1713085, 37.575577) # color=green 
-point(9.167012, 37.583794) # color=green 
-point(9.175646, 37.585476) # color=green 
-point(9.178567, 37.580803) # color=green 
-point(9.167225, 37.585724) # color=green 
-point(9.1751585, 37.584785) # color=green 
-circle(9.2552083,37.6445278,21.6") # text={2M021, 14 pts, class 4.0} 
-point(9.255379, 37.64445) # color=green 
-point(9.254775, 37.645084) # color=green 
-point(9.251775, 37.643642) # color=green 
-point(9.251583, 37.639946) # color=green 
-point(9.254504, 37.645885) # color=green 
-point(9.260713, 37.64188) # color=green 
-point(9.25295, 37.647366) # color=green 
+circle(8.5717625,37.5120611,21.6") # text={H9, class 1.0} 
+circle(9.1714167,37.5815,21.6") # text={2M020, class 4.0} 
+circle(9.2552083,37.6445278,21.6") # text={2M021, class 4.0} 

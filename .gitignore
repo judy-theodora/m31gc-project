@@ -12,3 +12,5 @@ pickle/cat280_320.pk
 pickle/cat321_360.pk
 pickle/cat361_406.pk
 pickle/cat51_100.pk
+*.reg
+*.pk
