@@ -1,0 +1,9 @@
+predictionsf207:
+created from f207 in 0803, is a subset of predictions, only the clustered ones
+
+211:
+n_trees = 40
+max_depth_ = 9
+max_leaf_nodes_ = 12
+min_samples_leaf_ = 15
+features_ = ['i','g','i-g']

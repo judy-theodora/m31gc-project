@@ -1,4 +1,4 @@
 global color=red dashlist=8 3 width=1 font="helvetica 14 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1 
 fk5 
-circle(357.2904166666666,40.458333333333336,21.6") # text={SDSS18, 0 pts, class 4.0} 
-circle(0.9850416666666666,40.888666666666666,21.6") # text={PAndAS-03, 0 pts, class 1.0} 
+circle(357.2904166666666,40.458333333333336,21.6") # text={SDSS18, class 4.0} 
+circle(0.9850416666666666,40.888666666666666,21.6") # text={PAndAS-03, class 1.0} 

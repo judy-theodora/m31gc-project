@@ -1,0 +1,13 @@
+274_predictions1.reg:
+n_trees = 40
+max_depth_ = 5
+max_leaf_nodes_ = 12
+min_samples_leaf_ = 15
+i,g,i-g
+
+274_predictions2.reg:
+n_trees = 40
+max_depth_ = 9
+max_leaf_nodes_ = 12
+min_samples_leaf_ = 20
+i,g,i-g

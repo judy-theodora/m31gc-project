@@ -1,0 +1,15 @@
+#Parameters
+#exclude fields directly around m31
+field_exclusions = [228, 232, 233, 235, 248, 249, 254, 257, 265, 266, 276, 279, 285, 288]
+
+fields = [i for i in range(135,350) if i not in field_exclusions]
+
+date = '0404'
+
+n_trees = 40
+max_depth_ = 9
+max_leaf_nodes_ = 12
+min_samples_leaf_ = 20
+features_ = ['i','g','i-g']
+
+iterations = 1 # number of times to make the predictions in order to intersect them all in an attempt to filter noise

@@ -1,0 +1,10 @@
+predictions made using 
+n_trees = 40
+max_depth_ = 5
+max_leaf_nodes_ = 12
+min_samples_leaf_ = 15
+features_ = ['i','g','i-g','j','h','k']
+
+
+except 207,279 used
+features_ = ['i','g','i-g']

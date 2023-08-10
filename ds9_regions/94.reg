@@ -1,33 +1,4 @@
 global color=red dashlist=8 3 width=1 font="helvetica 14 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1 
 fk5 
-circle(17.13958333333333,33.78611111111111,21.6") # text={C50, 32 pts, class 4.0} 
-point(17.139555, 33.78602) # color=green 
-point(17.135662, 33.788376) # color=green 
-point(17.138441, 33.786945) # color=green 
-point(17.141346, 33.78703) # color=green 
-point(17.139284, 33.78809) # color=green 
-point(17.135303, 33.782394) # color=green 
-point(17.142004, 33.786385) # color=green 
-point(17.137762, 33.78196) # color=green 
-point(17.143383, 33.784977) # color=green 
-point(17.13677, 33.79009) # color=green 
-point(17.144817, 33.7825) # color=green 
-point(17.144787, 33.787785) # color=green 
-point(17.14499, 33.782963) # color=green 
-point(17.140041, 33.788868) # color=green 
-point(17.140745, 33.783665) # color=green 
-point(17.13665, 33.786896) # color=green 
-circle(16.561666666666667,34.020833333333336,21.6") # text={C47, 25 pts, class 4.0} 
-point(16.561758, 34.020767) # color=green 
-point(16.5685, 34.02185) # color=green 
-point(16.562162, 34.019672) # color=green 
-point(16.565609, 34.02) # color=green 
-point(16.563837, 34.02504) # color=green 
-point(16.55842, 34.02192) # color=green 
-point(16.564255, 34.023525) # color=green 
-point(16.561129, 34.018585) # color=green 
-point(16.55675, 34.02323) # color=green 
-point(16.568132, 34.02308) # color=green 
-point(16.563162, 34.024837) # color=green 
-point(16.567987, 34.02294) # color=green 
-point(16.560284, 34.018932) # color=green 
+circle(17.13958333333333,33.78611111111111,21.6") # text={C50, class 4.0} 
+circle(16.561666666666667,34.020833333333336,21.6") # text={C47, class 4.0} 

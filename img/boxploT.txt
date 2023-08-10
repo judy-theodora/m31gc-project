@@ -1,0 +1,32 @@
+###########
+# SOLVERS #
+###########
+
+ALPHA=1
+250 ITERATIONS EACH
+
+
+##############
+# ACTIVATION #
+##############
+# gather performance stats for mlp model
+activation = ['identity', 'tanh', 'logistic']
+
+recall = {}
+accuracy = {}
+for s in activation:
+    print(s)
+    recall[s] = []
+    accuracy[s] = []
+    for i in range(250):
+        _, test_pred, test_true, _, _ = mlp_class(training_data,activation=s,stats=True,
+                                          max_iter=1000, alpha=1)
+    
+        tn, fp, fn, tp = confusion_matrix(test_true,test_pred,labels=['galaxy','gc']).ravel()
+        recall[s].append( tp/(tp+fn) ) # fraction of correctly identified GCs, out of all GCs (1-recall = fraction that were missed)
+        accuracy[s].append( (tp+tn)/(tn+fp+fn+tp) )# fraction of correctly identified objects
+        
+        # using all training data except entries with inaccurate J values are filtered for the model using J
+plt.boxplot([recall[i] for i in recall],labels=activation)
+plt.grid()
+plt.show()

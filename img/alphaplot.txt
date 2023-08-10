@@ -1,0 +1,37 @@
+# gather performance stats for mlp model
+alphas = [0.00005,0.0001,0.0002,0.0003,0.0005,0.0007,0.00085,0.001,0.002,0.003,0.004,0.006,0.008,0.01,0.03,0.05,0.06,0.1,0.15,0.2,0.3,0.4,0.5,0.6,0.8,1,1.25,1.5,2,2.5,3,3.5,4,5,7,8,10,12]
+
+recall = {}
+accuracy = {}
+for a in alphas:
+    print(a)
+    recall[a] = []
+    accuracy[a] = []
+    for i in range(200):
+        _, test_pred, test_true, _, _ = mlp_class(training_data,solver='lbfgs',stats=True,
+                                          max_iter=1000, alpha=a)
+    
+        tn, fp, fn, tp = confusion_matrix(test_true,test_pred,labels=['galaxy','gc']).ravel()
+        recall[a].append( tp/(tp+fn) ) # fraction of correctly identified GCs, out of all GCs (1-recall = fraction that were missed)
+        accuracy[a].append( (tp+tn)/(tn+fp+fn+tp) )# fraction of correctly identified objects
+
+
+
+##########################################################
+AND FOR THE QUARTILES PLOT:
+
+
+
+recall_low, recall_high  = np.quantile([recall[i] for i in recall],[0.25,0.75], axis=1)
+acc_low, acc_high  = np.quantile([accuracy[i] for i in accuracy],[0.25,0.75], axis=1)
+
+plt.plot(recall.keys(), np.quantile([recall[i] for i in recall],0.5, axis=1), c='#074297', label='recall')
+plt.fill_between(recall.keys(),recall_low,recall_high,color='0.82')
+#plt.plot(accuracy.keys(), np.quantile([accuracy[i] for i in accuracy],0.5, axis=1), c='#970707', label='accuracy')
+#plt.fill_between(recall.keys(),acc_low,acc_high,color='0.85')
+
+plt.xlabel('$alpha$')
+plt.ylabel('recall score')
+#plt.legend()
+plt.grid()
+plt.xscale('log')
